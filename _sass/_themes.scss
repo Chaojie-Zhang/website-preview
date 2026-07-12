@@ -315,7 +315,7 @@ html .publications h2.bibliography {
 }
 
 html .publications ol.bibliography {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 2px solid var(--global-theme-color);
   margin-top: 1.5rem;
   padding-top: 1.5rem;
 }
@@ -488,7 +488,18 @@ html .publications .periodical.note {
   font-style: italic;
   color: var(--global-text-color);
   opacity: 0.85;
-  margin-top: 0.15rem;
+  margin-top: 0.6rem;
+}
+
+/* Award button in gold, like the old site's trophy notes */
+html .publications .links a.award {
+  color: #b8860b;
+  border-color: #b8860b;
+}
+
+html[data-theme="dark"] .publications .links a.award {
+  color: #e3b341;
+  border-color: #e3b341;
 }
 
 /* Blog list dividers match the site-wide divider color */
