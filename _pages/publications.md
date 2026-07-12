@@ -5,29 +5,21 @@ title: publications
 description: peer-reviewed publications in reverse chronological order
 nav: true
 nav_order: 1
+pub_numbering: true
 ---
 
 <!-- _pages/publications.md -->
 
-{% capture pubcount %}{% bibliography_count %}{% endcapture %}
-{% assign bibnum_start = pubcount | plus: 1 %}
-
-<p class="pub-total">{{ pubcount }} peer-reviewed publications</p>
+<p class="pub-total">{% bibliography_count %} peer-reviewed publications</p>
 
 <style>
-  /* numbered entries, counted down from the total — scoped to this page.
-     The counter lives on the wrapper so it spans all year groups. */
-  .publications {
-    counter-reset: bibnum {{ bibnum_start }};
-  }
+  /* room for the static [n] marker rendered by the bib template */
   .publications ol.bibliography > li {
-    counter-increment: bibnum -1;
     position: relative;
     padding-left: 3.4rem;
     margin-bottom: 2rem;
   }
-  .publications ol.bibliography > li::before {
-    content: "[" counter(bibnum) "]";
+  .publications .pub-num {
     position: absolute;
     left: 0;
     top: 0;

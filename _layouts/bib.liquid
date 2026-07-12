@@ -49,6 +49,13 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     {% comment %} Local override: per-entry year marker, top right {% endcomment %}
     {% if entry.year %}<div class="pub-year">{{ entry.year }}</div>{% endif %}
+    {% comment %} Static entry number baked at build time so search filtering
+    keeps each paper's true number (CSS counters renumber visible items) {% endcomment %}
+    {% if page.pub_numbering %}
+      {% capture pubtotal %}{% bibliography_count %}{% endcapture %}
+      {% assign pubnum = pubtotal | plus: 0 | minus: index %}
+      <div class="pub-num">[{{ pubnum }}]</div>
+    {% endif %}
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->

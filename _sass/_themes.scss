@@ -502,13 +502,19 @@ html[data-theme="dark"] .publications .links a.award {
   border-color: #e3b341;
 }
 
-/* Blog list dividers match the site-wide divider color */
+/* Content dividers (blog list, talks-page rules) pick up the accent,
+   matching the publications page */
 html .post-list > li {
-  border-bottom-color: var(--global-divider-color);
+  border-bottom-color: color-mix(in srgb, var(--global-theme-color) 55%, transparent);
 }
 
 html .post-list > li:last-child {
   border-bottom: none;
+}
+
+article hr,
+.post hr {
+  border-top: 1px solid color-mix(in srgb, var(--global-theme-color) 55%, transparent);
 }
 
 html .publications .row > .col-sm-8,
