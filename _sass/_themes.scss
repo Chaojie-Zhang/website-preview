@@ -302,3 +302,28 @@ article hr,
   width: 100%;
   min-height: 620px;
 }
+
+/* Name: uniformly bold in the navbar, uniform weight in the about title */
+html .navbar-brand {
+  font-weight: 700;
+}
+
+h1.post-title .font-weight-bold {
+  font-weight: inherit;
+}
+
+/* Project cards: title was oversized */
+html .card h2.card-title {
+  font-size: 1.35rem;
+}
+
+html .card .card-text {
+  font-size: 0.95rem;
+}
+
+/* Publication entries: let the text column fill the row so its width
+   matches the surrounding content */
+html .publications ol.bibliography > li .row > div:not(.abbr) {
+  flex: 1 1 auto;
+  max-width: 100%;
+}

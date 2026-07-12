@@ -19,7 +19,7 @@ This incredible promise, however, was hindered by a fundamental problem: the ver
 To solve this problem, we conceived and developed an innovative diagnostic technique: the **Femtosecond Relativistic Electron Probe (FREP)**. The concept is to use the unique properties of high-energy electrons from a laser-plasma accelerator to measure another wake.
 
 <p align="center">
-  <img src="{{ '/assets/img/FREP_concept_visualization.png' | relative_url }}\" alt="FREP Concept" style="width:68%;">
+  <img src="{{ '/assets/img/FREP_concept_visualization.png' | relative_url }}" alt="FREP Concept" style="width:68%;">
   <br/>
   <em>Fig. 1: Conceptualization of the FREP diagnostic. A drive beam creates the plasma wake, and a perpendicular probe beam maps its structure.</em>
 </p>
@@ -31,7 +31,7 @@ The concept of FREP is illustrated in Fig. 1. In this example, two synchronized 
 We performed the first experimental demonstration of the FREP technique at the *High-Field Physics and Ultrafast Technology Laboratory* of the **National Central University** in Taiwan. The results provided an immediate, unambiguous view of the wakefield's structure, as shown in Fig. 2. By adjusting the time delay between the two laser pulses, we could capture a series of these snapshots to create a time-resolved "movie" of the wake's evolution.
 
 <p align="center">
-  <img src="{{ '/assets/img/FREP_wake_snapshots.png' | relative_url }}\" alt="Snapshots of the wakefield" style="width:68%;">
+  <img src="{{ '/assets/img/FREP_wake_snapshots.png' | relative_url }}" alt="Snapshots of the wakefield" style="width:68%;">
   <br/>
   <em>Fig. 2: A snapshot capturing the plasma wakefield with femtosecond resolution.</em>
 </p>
@@ -39,7 +39,7 @@ We performed the first experimental demonstration of the FREP technique at the *
 The "movie" we created with these first snapshots revealed an interesting phenomenon for the first time: **plasma wake reversal** in a density upramp (Fig. 3).
 
 <p align="center">
-  <img src="{{ '/assets/img/FREP_wake_reversal.png' | relative_url }}\" alt="Wake reversal in a density upramp" style="width:68%;">
+  <img src="{{ '/assets/img/FREP_wake_reversal.png' | relative_url }}" alt="Wake reversal in a density upramp" style="width:68%;">
   <br/>
   <em>Fig. 3: Direct observation of plasma wake reversal, a discovery enabled by the FREP technique.</em>
 </p>
