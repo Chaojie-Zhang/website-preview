@@ -13,6 +13,13 @@ pub_numbering: true
 <p class="pub-total">{% bibliography_count %} peer-reviewed publications</p>
 
 <style>
+  /* year-group separators — page-scoped so the homepage selected list has none */
+  html .publications ol.bibliography {
+    border-top: 2px solid var(--global-theme-color);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
   /* room for the static [n] marker rendered by the bib template */
   .publications ol.bibliography > li {
     position: relative;

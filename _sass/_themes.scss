@@ -314,11 +314,8 @@ html .publications h2.bibliography {
   display: none;
 }
 
-html .publications ol.bibliography {
-  border-top: 2px solid var(--global-theme-color);
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-}
+/* (year-group top borders are scoped to the publications page's own styles
+   so the homepage's selected list stays clean) */
 
 /* Per-entry year marker: floated on the title line so long titles wrap
    around it instead of overlapping */
@@ -350,10 +347,19 @@ html .profile .more-info {
   text-align: center;
 }
 
-/* Roomier horizontal rules between content sections (talks page etc.) */
+/* Horizontal rules between content sections (talks page etc.) — modest
+   gap between the rule and the surrounding text */
 article hr,
 .post hr {
-  margin: 2.25rem 0;
+  margin: 1.4rem 0;
+}
+
+/* Blog list: tighter space around each entry's divider */
+html .post-list > li {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Research highlight cards on the about page */
