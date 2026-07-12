@@ -261,12 +261,12 @@ h6 {
    need their own (smaller) size. */
 html h1,
 html h1.post-title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: -0.015em;
 }
 
 html h2 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   letter-spacing: -0.01em;
 }
 
@@ -282,6 +282,21 @@ html h4 {
 html .post-list h3,
 html .post-list .post-title {
   font-size: 1.25rem;
+}
+
+/* Headings inside post bodies follow the same scale regardless of any
+   theme rules on .post-content */
+html .post-content h2 {
+  font-size: 1.25rem;
+}
+
+html .post-content h3 {
+  font-size: 1.15rem;
+}
+
+html .post-content h4,
+html .post-content h5 {
+  font-size: 1.05rem;
 }
 
 html .post-header .post-description,
@@ -420,8 +435,17 @@ html .card .card-text {
 /* Publication entries: narrow fixed badge column, text fills the rest of
    the row so its width matches the surrounding content */
 html .publications .row > .abbr {
-  flex: 0 0 120px;
-  max-width: 120px;
+  flex: 0 0 165px;
+  max-width: 165px;
+}
+
+/* Long official journal abbreviations wrap inside the badge instead of
+   being cropped */
+html .publications .abbr .badge {
+  white-space: normal;
+  line-height: 1.3;
+  padding-top: 0.35em;
+  padding-bottom: 0.35em;
 }
 
 html .publications .row > .col-sm-8,

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our plasma "dual transformer" work is published in Nature Communications
-date: 2025-06-01
+date: 2025-11-28
 inline: false
 related_posts: false
 ---

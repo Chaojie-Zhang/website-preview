@@ -57,7 +57,7 @@ John Dawson Thesis Prize 2017
 
 **Jan 2025** · Invited Seminar, "Advancing Plasma-based Accelerators: From High-Brightness Beams to New Frontiers," Department of Physics and Astronomy, Stony Brook University
 
-**Dec 2024** · Plenary Talk, "Latest Results on PWFA Experiments from FACET-II," 21st Advanced Accelerator Concepts Workshop
+**Jul 2024** · Plenary Talk, "Latest Results on PWFA Experiments from FACET-II," 21st Advanced Accelerator Concepts Workshop
 
 **Nov 2024** · Invited Seminar, "Latest Results on PWFA experiments at FACET-II," Department of Physics and Astronomy, Shanghai Jiao Tong University
 

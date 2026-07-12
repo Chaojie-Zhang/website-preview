@@ -9,7 +9,7 @@ nav_order: 4
 
 #### Plenary Talk — Advanced Accelerator Concepts Workshop (AAC24)
 
-**Latest results on PWFA experiments from FACET-II** · Naperville, IL, USA · August 2024
+**Latest results on PWFA experiments from FACET-II** · Naperville, IL, USA · July 2024
 
 FACET-II is a national user facility that offers a unique capability for developing advanced acceleration and coherent radiation generation techniques using high-energy electron beams. This plenary presented the latest results from plasma wakefield acceleration experiments at FACET-II: evidence of energy depletion of the 10 GeV drive beam and efficient beam-to-wake energy transfer in both beam-ionized and laser-preionized plasmas; machine-learning-enabled beam tuning to increase drive beam density; generation of >20 GeV electron bunches with small energy spread and emittance via density downramp injection; multi-GeV, multi-color electron beams via ionization injection; and first experimental attempts at beam matching and two-bunch PWFA.
 
