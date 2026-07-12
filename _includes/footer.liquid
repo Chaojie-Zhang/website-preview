@@ -34,12 +34,25 @@
 {% endif %}
 
 {% comment %} Local override: disable single-dollar MathJax delimiters so
-currency amounts in prose are never parsed as math. This inline script runs
-after the head's mathjax-setup.js (document order) and before the deferred
-MathJax engine executes, which is exactly the window where config changes
-apply. All real math on the site uses \( \) or $$ ... $$. {% endcomment %}
+currency amounts in prose ("$30-40M ... $150M+") are never parsed as math.
+The theme emits mathjax-setup.js BELOW the footer, so this script cannot
+patch the config directly; instead it traps the window.MathJax assignment
+and removes the single-dollar delimiter from whatever config object arrives,
+before the deferred MathJax engine reads it. Real math uses \( \) or $$. {% endcomment %}
 <script>
-  if (window.MathJax && window.MathJax.tex) {
-    window.MathJax.tex.inlineMath = [["\\(", "\\)"]];
-  }
+  (function () {
+    var val = window.MathJax;
+    Object.defineProperty(window, "MathJax", {
+      configurable: true,
+      get: function () {
+        return val;
+      },
+      set: function (v) {
+        if (v && v.tex && v.tex.inlineMath) {
+          v.tex.inlineMath = [["\\(", "\\)"]];
+        }
+        val = v;
+      },
+    });
+  })();
 </script>
