@@ -8,7 +8,7 @@ description: curriculum vitae
 redirect_from:
   - /resume
 toc:
-  sidebar: left
+  sidebar: right
 ---
 
 ## Professional Appointments

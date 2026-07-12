@@ -216,11 +216,21 @@ html {
   font-size: 18px;
 }
 
-/* Native system font stack: modern, professional, and — critically — no
-   web-font swap, which caused a small vertical jump on every page load */
+/* Inter, self-hosted (assets/fonts). font-display: optional means the font
+   is only used when instantly available — first-ever visit falls back to the
+   system font, every visit after renders Inter at first paint. Either way
+   the text NEVER re-renders mid-view, so no layout jump is possible. */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: optional;
+}
+
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 input,
@@ -230,8 +240,8 @@ select {
   font-family: inherit;
 }
 
-/* Headings: same family, tighter line-height (Tailwind's 1.5 made large
-   headings look vertically stretched) */
+/* Headings: same family, semibold, tighter line-height (the default light
+   weight at 1.5 line-height is what read as "vertically stretched") */
 h1,
 h2,
 h3,
@@ -239,6 +249,7 @@ h4,
 h5,
 h6 {
   font-family: inherit;
+  font-weight: 600;
   line-height: 1.25;
 }
 
@@ -294,6 +305,7 @@ article hr,
 
 .research-box .research-img img {
   width: 100%;
+  height: auto; /* the intrinsic height attribute must not stretch the scaled image */
   border-radius: 6px;
 }
 
