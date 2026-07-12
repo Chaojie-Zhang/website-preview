@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "FREP: Femtosecond Relativistic Electron Probe"
+title: "Femtosecond Relativistic Electron Probe"
 description: An innovative diagnostic to probe microscopic, transient plasma wakefields with micrometer and femtosecond resolution
 img: assets/img/FREP_concept_visualization.png
 importance: 1
