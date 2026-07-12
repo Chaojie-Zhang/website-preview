@@ -452,18 +452,17 @@ html .card .card-text {
 
 /* Publication entries: narrow fixed badge column, text fills the rest of
    the row so its width matches the surrounding content */
+/* The journal badge column is hidden: the work leads, and the journal
+   already appears in the citation line of every entry */
 html .publications .row > .abbr {
-  flex: 0 0 205px;
-  max-width: 205px;
+  display: none;
 }
 
-/* Official journal abbreviations stay on a single line */
-html .publications .abbr .badge {
-  white-space: nowrap;
-  font-size: 0.72rem;
-  line-height: 1.4;
-  padding-top: 0.35em;
-  padding-bottom: 0.35em;
+/* One-sentence summary under each publication (bib `note` field) */
+html .publications .periodical + .periodical {
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-top: 0.15rem;
 }
 
 html .publications .row > .col-sm-8,
