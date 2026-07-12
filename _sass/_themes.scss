@@ -381,6 +381,24 @@ article hr,
   }
 }
 
+/* Homepage sections: clear separation between news / latest posts /
+   selected publications, and pull the first publication entry up toward
+   its heading */
+html .post article > h2 {
+  margin-top: 3rem;
+}
+
+html .post article .publications {
+  margin-top: 0.5rem;
+}
+
+/* News and latest-posts dates: regular weight, muted — the content, not
+   the date, should lead */
+html .post article table th[scope="row"] {
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+
 /* Taller comments widget so readers don't scroll inside a small box */
 #cusdis_thread iframe {
   width: 100%;
@@ -435,15 +453,15 @@ html .card .card-text {
 /* Publication entries: narrow fixed badge column, text fills the rest of
    the row so its width matches the surrounding content */
 html .publications .row > .abbr {
-  flex: 0 0 165px;
-  max-width: 165px;
+  flex: 0 0 205px;
+  max-width: 205px;
 }
 
-/* Long official journal abbreviations wrap inside the badge instead of
-   being cropped */
+/* Official journal abbreviations stay on a single line */
 html .publications .abbr .badge {
-  white-space: normal;
-  line-height: 1.3;
+  white-space: nowrap;
+  font-size: 0.72rem;
+  line-height: 1.4;
   padding-top: 0.35em;
   padding-bottom: 0.35em;
 }
