@@ -3,8 +3,10 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    {% comment %} Local override: page title here, like every other page — the name lives in the navbar {% endcomment %}
-    <h1 class="post-title">{{ page.title }}</h1>
+    {% comment %} Local override: page heading here, like every other page — the name
+    lives in the navbar. `heading` decouples the on-page title from the nav label
+    (nav says "home", the page says "about me"). {% endcomment %}
+    <h1 class="post-title">{{ page.heading | default: page.title }}</h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
