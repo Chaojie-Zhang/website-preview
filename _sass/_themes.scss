@@ -240,8 +240,10 @@ select {
   font-family: inherit;
 }
 
-/* Headings: same family, semibold, tighter line-height (the default light
-   weight at 1.5 line-height is what read as "vertically stretched") */
+/* Headings: semibold on a reduced modular scale. Weight and size both add
+   visual mass — bold headings must be smaller than light ones to balance
+   with body text. Slight negative tracking at display sizes (Inter is
+   designed for this). */
 h1,
 h2,
 h3,
@@ -253,6 +255,33 @@ h6 {
   line-height: 1.25;
 }
 
+html h1,
+html .post-title {
+  font-size: 1.9rem;
+  letter-spacing: -0.017em;
+}
+
+html h2 {
+  font-size: 1.4rem;
+  letter-spacing: -0.012em;
+}
+
+html h3 {
+  font-size: 1.2rem;
+  letter-spacing: -0.008em;
+}
+
+html h4 {
+  font-size: 1.05rem;
+}
+
+html .post-header .post-description,
+html .post-header .desc,
+html p.post-description {
+  font-size: 1.05rem;
+  color: var(--global-text-color-light);
+}
+
 /* Publication year separators: accent color instead of the near-invisible
    divider color */
 html .publications h2.bibliography {
@@ -260,13 +289,6 @@ html .publications h2.bibliography {
   border-top: 2px solid var(--global-theme-color);
   font-weight: 600;
   opacity: 0.9;
-}
-
-/* Page descriptions under page titles were too small */
-html .post-header .post-description,
-html .post-header .desc,
-html p.post-description {
-  font-size: 1.1rem;
 }
 
 /* Social/contact icons on the about page: smaller and tidier */
