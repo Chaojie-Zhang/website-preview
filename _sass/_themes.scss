@@ -218,7 +218,7 @@ html {
 
 /* Publication year separators: accent color instead of the near-invisible
    divider color */
-.publications h2.bibliography {
+html .publications h2.bibliography {
   color: var(--global-theme-color);
   border-top: 2px solid var(--global-theme-color);
   font-weight: 600;
