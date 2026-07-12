@@ -329,6 +329,32 @@ article hr,
   min-height: 620px;
 }
 
+/* ---- Layout-shift fixes (diagnosed via Chrome layout-shift traces) ----
+   The navbar grew from ~56px to 64px when the FontAwesome icon font
+   arrived, and a script then re-synced the body offset — nudging all
+   content down a few pixels on every navigation. Pin both to the final
+   height so nothing can move. */
+@media (min-width: 576px) {
+  #navbar {
+    height: 64px;
+  }
+}
+
+html body.fixed-top-nav {
+  padding-top: 64px;
+}
+
+/* Reserve image space before the files load (they have no intrinsic
+   dimensions in the HTML, so late loads shoved the text around) */
+.profile img {
+  aspect-ratio: 1 / 1;
+}
+
+.card img.card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
 /* Name: uniformly bold in the navbar, uniform weight in the about title */
 html .navbar-brand {
   font-weight: 700;

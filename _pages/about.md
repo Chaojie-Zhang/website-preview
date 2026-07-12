@@ -40,7 +40,7 @@ Check out my [CV](/cv/), [publications](/publications/), and [research projects]
 
 <div class="research-box">
   <div class="research-img">
-    <img src="{{ '/assets/img/e304_plasma_dual_transformer.png' | relative_url }}" alt="E304 plasma dual transformer">
+    <img src="{{ '/assets/img/e304_plasma_dual_transformer.png' | relative_url }}" alt="E304 plasma dual transformer" width="1016" height="1006">
   </div>
   <div class="research-text">
     <h4>Plasma Wakefield Transformer</h4>
@@ -51,7 +51,7 @@ Check out my [CV](/cv/), [publications](/publications/), and [research projects]
 
 <div class="research-box">
   <div class="research-img">
-    <img src="{{ '/assets/img/e304_ML_virtual_diagnostic.png' | relative_url }}" alt="ML virtual diagnostics">
+    <img src="{{ '/assets/img/e304_ML_virtual_diagnostic.png' | relative_url }}" alt="ML virtual diagnostics" width="1042" height="750">
   </div>
   <div class="research-text">
     <h4>AI/ML-Driven Virtual Diagnostics</h4>
@@ -62,7 +62,7 @@ Check out my [CV](/cv/), [publications](/publications/), and [research projects]
 
 <div class="research-box">
   <div class="research-img">
-    <img src="{{ '/assets/img/FREP_concept_visualization.png' | relative_url }}" alt="FREP concept">
+    <img src="{{ '/assets/img/FREP_concept_visualization.png' | relative_url }}" alt="FREP concept" width="1890" height="1890">
   </div>
   <div class="research-text">
     <h4>Femtosecond Relativistic Electron Probing (FREP)</h4>
@@ -73,7 +73,7 @@ Check out my [CV](/cv/), [publications](/publications/), and [research projects]
 
 <div class="research-box">
   <div class="research-img">
-    <img src="{{ '/assets/img/AAPS-CO2-weibel-cover.png' | relative_url }}" alt="Weibel instability measurement">
+    <img src="{{ '/assets/img/AAPS-CO2-weibel-cover.png' | relative_url }}" alt="Weibel instability measurement" width="595" height="796">
   </div>
   <div class="research-text">
     <h4>Probing the Hierarchy of Kinetic Instabilities</h4>
