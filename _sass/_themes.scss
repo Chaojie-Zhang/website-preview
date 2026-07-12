@@ -313,6 +313,31 @@ html .publications h2.bibliography {
   border-top: 2px solid var(--global-theme-color);
   font-weight: 600;
   opacity: 0.9;
+  margin-top: 0.25rem; /* the entry's own bottom margin provides the gap above the separator */
+}
+
+/* Per-entry year marker, top right (like the old site) */
+html .publications ol.bibliography > li {
+  position: relative;
+  padding-right: 4rem;
+}
+
+html .publications .pub-year {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+/* Journal badge as the last chip in the DOI/Bib/PDF row, flexible width */
+html .publications .links .journal-badge {
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  white-space: nowrap;
+  font-size: 0.72rem;
+  padding: 0.4em 0.65em;
+  vertical-align: middle;
 }
 
 /* Social/contact icons on the about page: smaller and tidier */
@@ -458,10 +483,12 @@ html .publications .row > .abbr {
   display: none;
 }
 
-/* One-sentence summary under each publication (bib `note` field) */
+/* One-sentence summary under each publication (bib `note` field) —
+   italic, only slightly softer than body text */
 html .publications .periodical + .periodical {
   font-style: italic;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
+  opacity: 0.85;
   margin-top: 0.15rem;
 }
 
