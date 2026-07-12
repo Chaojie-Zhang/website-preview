@@ -5,4 +5,5 @@ email: chaojiez@ucla.edu # your email address
 github_username: Chaojie-Zhang # your GitHub user name
 orcid_id: 0000-0001-8035-3014 # your ORCID ID
 scholar_userid: CBjsrOUAAAAJ # your Google Scholar ID
+# wechat_qr: wechat-qr.png # UNCOMMENT once assets/img/wechat-qr.png is uploaded (export from WeChat: Me -> My QR Code -> Save Image). Shows a hover QR instead of exposing the account name to bots.
 rss_icon: true # comment this line to hide the RSS icon
