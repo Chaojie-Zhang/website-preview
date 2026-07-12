@@ -314,8 +314,11 @@ html .publications h2.bibliography {
   display: none;
 }
 
-/* (year-group top borders are scoped to the publications page's own styles
-   so the homepage's selected list stays clean) */
+html .publications ol.bibliography {
+  border-top: 2px solid var(--global-theme-color);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
 
 /* Per-entry year marker: floated on the title line so long titles wrap
    around it instead of overlapping */
