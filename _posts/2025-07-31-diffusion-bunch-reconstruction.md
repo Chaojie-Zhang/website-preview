@@ -33,7 +33,7 @@ Each diagnostic alone is insufficient to uniquely solve the inverse problem. Our
 
 We propose using a conditional denoising diffusion probabilistic model (DDPM) to solve this inverse problem. Diffusion models are a class of generative models that learn to reverse a fixed Markovian process that gradually adds Gaussian noise to data.
 
-The reverse process is where the learning occurs. A neural network, typically a **U-Net**, is trained to denoise the data at each step `t` by predicting the noise that was added. The key to solving inverse problems is that this denoising process can be **conditioned** on external data `y`—in our case, the measured energy and COTR spectra. The network learns to approximate the score of the conditional distribution, \\(\nabla_{x_t} \log p(x_t|y)\\), guiding the generation process from random noise toward a high-fidelity solution that is consistent with the specific experimental measurements.
+The reverse process is where the learning occurs. A neural network, typically a **U-Net**, is trained to denoise the data at each step `t` by predicting the noise that was added. The key to solving inverse problems is that this denoising process can be **conditioned** on external data `y`—in our case, the measured energy and COTR spectra. The network learns to approximate the score of the conditional distribution, \\(\nabla_{x_t} \log p(x_t \mid y)\\), guiding the generation process from random noise toward a high-fidelity solution that is consistent with the specific experimental measurements.
 
 ---
 ### Advantages Over Feed-Forward MLP Networks
