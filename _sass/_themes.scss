@@ -17,7 +17,7 @@
   --global-footer-text-color: #{v.$grey-color-light};
   --global-footer-link-color: #{v.$white-color};
   --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-divider-color: rgba(0, 0, 0, 0.17); /* strengthened — default 0.1 was too faint */
   --global-card-bg-color: #{v.$white-color};
   --global-highlight-color: #{v.$red-color-dark};
   --global-back-to-top-bg-color: rgba(
@@ -87,7 +87,7 @@ html[data-theme="dark"] {
   --global-footer-text-color: #{v.$grey-color-dark};
   --global-footer-link-color: #{v.$black-color};
   --global-distill-app-color: #{v.$grey-color-light};
-  --global-divider-color: #424246;
+  --global-divider-color: #55555c; /* strengthened — default #424246 was too faint */
   --global-card-bg-color: #{v.$grey-900};
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$white-color, "red", v.$space: rgb)},
@@ -211,9 +211,9 @@ html[data-theme-setting="light"] {
  * Local site customizations (chaojiezhang.me)
  ******************************************************************************/
 
-/* Slightly larger base type across the whole site */
+/* Larger base type across the whole site */
 html {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /* Publication year separators: accent color instead of the near-invisible
@@ -223,4 +223,82 @@ html .publications h2.bibliography {
   border-top: 2px solid var(--global-theme-color);
   font-weight: 600;
   opacity: 0.9;
+}
+
+/* Page descriptions under page titles were too small */
+html .post-header .post-description,
+html .post-header .desc,
+html p.post-description {
+  font-size: 1.1rem;
+}
+
+/* Social/contact icons on the about page: smaller and tidier */
+html .social .contact-icons,
+html .social .contact-icons a {
+  font-size: 1.6rem;
+}
+
+/* Center the location/email under the profile photo */
+html .profile .more-info {
+  text-align: center;
+}
+
+/* Roomier horizontal rules between content sections (talks page etc.) */
+article hr,
+.post hr {
+  margin: 2.25rem 0;
+}
+
+/* Research highlight cards on the about page */
+.research-box {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.6rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.research-box .research-img {
+  flex: 0 0 320px;
+}
+
+.research-box .research-img img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.research-box h4 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.research-box .research-teaser {
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+.research-box p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .research-box {
+    flex-direction: column;
+  }
+
+  .research-box .research-img {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* Taller comments widget so readers don't scroll inside a small box */
+#cusdis_thread iframe {
+  width: 100%;
+  min-height: 620px;
 }
