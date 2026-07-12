@@ -482,6 +482,12 @@ html .publications .row > .abbr {
   display: none;
 }
 
+/* Entry numbers render everywhere the bib template is used but only the
+   publications page (which sets display:block) shows them */
+html .publications .pub-num {
+  display: none;
+}
+
 /* One-sentence summary under each publication (bib `note` field) —
    italic, only slightly softer than body text */
 html .publications .periodical.note {
