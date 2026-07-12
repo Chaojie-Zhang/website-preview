@@ -362,6 +362,13 @@ article hr + h4,
   margin-top: 0; /* heading margin otherwise wins the collapse and widens the gap */
 }
 
+/* Inside blog articles, --- separators break the reading flow — headings and
+   whitespace carry the structure instead. (Talks-page rules are unaffected:
+   that page uses a plain article element, not .post-content.) */
+html article.post-content hr {
+  display: none;
+}
+
 /* Blog list: ~20px around each entry's divider (the entry's last child
    brings its own bottom margin, so no extra padding above the line) */
 html .post-list > li {

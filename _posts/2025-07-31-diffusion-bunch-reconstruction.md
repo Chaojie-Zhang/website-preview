@@ -24,7 +24,7 @@ The accurate characterization of the longitudinal current profile of electron bu
 
 Two primary diagnostics are commonly used:
 1.  **Electron Energy Spectrometer:** Measures the final energy distribution (\\(dQ/dE\\)). This observable is the result of the complex, non-linear wakefield loading integrated over the full acceleration distance. Different initial current profiles can lead to similar final energy spectra, creating significant ambiguity.
-2.  **COTR Spectrometer:** Measures the spectrum of Coherent Optical Transition Radiation, which is proportional to the squared amplitude of the bunch form factor (\\(|b(k)|^2\\)). While directly related to the bunch's Fourier transform, this measurement lacks the phase information necessary for unique profile reconstruction.
+2.  **COTR Spectrometer:** Measures the spectrum of Coherent Optical Transition Radiation, which is proportional to the squared amplitude of the bunch form factor (\\(\lvert b(k) \rvert^2\\)). While directly related to the bunch's Fourier transform, this measurement lacks the phase information necessary for unique profile reconstruction.
 
 Each diagnostic alone is insufficient to uniquely solve the inverse problem. Our work proposes a method to fuse the information from both diagnostics using a conditional generative model to overcome these limitations.
 
