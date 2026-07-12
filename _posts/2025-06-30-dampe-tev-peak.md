@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'Is the DAMPE 1.4 TeV peak real?'
+date: 2025-06-30
+permalink: /posts/2025/06/dampe-tev-peak/
+redirect_from:
+  - /posts/2025/06/blog-post-1/
+description: 'CALET contradicts DAMPE''s 2017 claim of a 1.4 TeV peak in cosmic-ray electrons at greater than 4-sigma significance—an intriguing discrepancy that warrants further investigation with additional data.'
+tags:
+  - HEP
+  - Cosmic rays
+  - DAMPE
+related_posts: true
+---
+
+In 2017, China's Dark Matter Particle Explorer (DAMPE) reported a possible peak in the cosmic-ray electron and positron spectrum at 1.4 TeV. The finding, published in *Nature*, suggested a sharp spectral feature that could indicate exotic physics or nearby astrophysical sources.
+
+The Calorimetric Electron Telescope (CALET) on the International Space Station has now contradicted this result. Using seven years of data with three times higher statistics, CALET reported in *Physical Review Letters* (2023) that it "does not observe any significant evidence for a narrow spectral feature in the energy region around 1.4 TeV." The experiments disagree at greater than 4-sigma significance.
+
+## The Measurements
+
+Both experiments measure cosmic-ray electrons and positrons from GeV to TeV energies. They agree on a spectral break around 0.9-1 TeV where the flux steepens significantly, consistent with radiative energy losses during particle propagation. However, DAMPE observed an additional narrow peak at 1.4 TeV, while CALET's higher-statistics measurement shows only smooth spectral steepening.
+
+CALET's superior energy resolution (better than 2% above 20 GeV) and proton rejection capabilities make it well-suited to detect such features. The experiment analyzed 7.02 million electron candidates above 10.6 GeV collected through 2022.
+
+## Current Status
+
+The statistical significance of DAMPE's original peak was modest, leading some theorists to suggest it could be a statistical fluctuation. CALET's results support this interpretation, though systematic differences between the experiments beyond the 1.4 TeV region indicate ongoing instrumental challenges in this energy range.
+
+DAMPE continues data collection and analysis. Additional statistics should clarify whether the 1.4 TeV feature persists or diminishes, resolving this discrepancy in cosmic-ray measurements.
