@@ -19,9 +19,21 @@
     });
   })();
 </script> <script async defer src="https://cusdis.com/js/cusdis.es.js"></script> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Chaojie Zhang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
-  if (window.MathJax && window.MathJax.tex) {
-    window.MathJax.tex.inlineMath = [["\\(", "\\)"]];
-  }
+  (function () {
+    var val = window.MathJax;
+    Object.defineProperty(window, "MathJax", {
+      configurable: true,
+      get: function () {
+        return val;
+      },
+      set: function (v) {
+        if (v && v.tex && v.tex.inlineMath) {
+          v.tex.inlineMath = [["\\(", "\\)"]];
+        }
+        val = v;
+      },
+    });
+  })();
 </script> <script>
   window.alFolio = {
     compatBootstrap: false

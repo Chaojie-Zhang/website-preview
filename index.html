@@ -45,9 +45,21 @@
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2017}</span><span class="p">,</span>
   <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1103/PhysRevLett.119.064801}</span>
 <span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:chaojiez@ucla.edu" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/Chaojie-Zhang" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://orcid.org/0000-0001-8035-3014" title="Orcid id" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a> <a href="https://scholar.google.com/citations?user=CBjsrOUAAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> <a href="/website-preview/assets/img/chaojie_wechat_qr.JPG" title="WeChat — scan the QR code to add me"><i class="fa-brands fa-weixin"></i></a> <a href="/website-preview/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> </div> <div class="contact-note">The best way to reach me is by email. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Chaojie Zhang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
-  if (window.MathJax && window.MathJax.tex) {
-    window.MathJax.tex.inlineMath = [["\\(", "\\)"]];
-  }
+  (function () {
+    var val = window.MathJax;
+    Object.defineProperty(window, "MathJax", {
+      configurable: true,
+      get: function () {
+        return val;
+      },
+      set: function (v) {
+        if (v && v.tex && v.tex.inlineMath) {
+          v.tex.inlineMath = [["\\(", "\\)"]];
+        }
+        val = v;
+      },
+    });
+  })();
 </script> <script>
   window.alFolio = {
     compatBootstrap: false
