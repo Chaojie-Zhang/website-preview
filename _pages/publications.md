@@ -19,8 +19,10 @@ pub_numbering: true
     padding-left: 3.4rem;
     margin-bottom: 2rem;
   }
-  .publications .pub-num {
-    display: block; /* hidden site-wide by default; shown on this page */
+  /* html prefix matches the specificity of the site-wide hide rule so this
+     page's show rule wins by cascade order */
+  html .publications .pub-num {
+    display: block;
     position: absolute;
     left: 0;
     top: 0;

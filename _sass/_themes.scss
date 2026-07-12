@@ -508,10 +508,9 @@ html[data-theme="dark"] .publications .links a.award {
   border-color: #e3b341;
 }
 
-/* Content dividers (blog list, talks-page rules) pick up the accent,
-   matching the publications page */
+/* All content dividers match the publications page: 2px accent rules */
 html .post-list > li {
-  border-bottom-color: color-mix(in srgb, var(--global-theme-color) 55%, transparent);
+  border-bottom: 2px solid var(--global-theme-color);
 }
 
 html .post-list > li:last-child {
@@ -520,7 +519,7 @@ html .post-list > li:last-child {
 
 article hr,
 .post hr {
-  border-top: 1px solid color-mix(in srgb, var(--global-theme-color) 55%, transparent);
+  border-top: 2px solid var(--global-theme-color);
 }
 
 html .publications .row > .col-sm-8,
