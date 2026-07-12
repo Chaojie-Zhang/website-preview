@@ -181,11 +181,9 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
-    <div class="periodical">
+    {% comment %} Local override: journal+year citation line removed — the
+    journal chip and the per-entry year marker carry that information {% endcomment %}
+    <div class="periodical note">
       {{ entry.note | strip }}
     </div>
 

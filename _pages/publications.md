@@ -15,8 +15,9 @@ nav_order: 1
 <p class="pub-total">{{ pubcount }} peer-reviewed publications</p>
 
 <style>
-  /* numbered entries, counted down from the total — scoped to this page */
-  .publications ol.bibliography {
+  /* numbered entries, counted down from the total — scoped to this page.
+     The counter lives on the wrapper so it spans all year groups. */
+  .publications {
     counter-reset: bibnum {{ bibnum_start }};
   }
   .publications ol.bibliography > li {

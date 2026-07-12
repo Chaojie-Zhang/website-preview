@@ -308,24 +308,23 @@ html p.post-description {
 
 /* Publication year separators: accent color instead of the near-invisible
    divider color */
+/* Year group headers replaced by thin rules — each entry carries its own
+   year, so the big year text was redundant */
 html .publications h2.bibliography {
-  color: var(--global-theme-color);
-  border-top: 2px solid var(--global-theme-color);
-  font-weight: 600;
-  opacity: 0.9;
-  margin-top: 0.25rem; /* the entry's own bottom margin provides the gap above the separator */
+  display: none;
 }
 
-/* Per-entry year marker, top right (like the old site) */
-html .publications ol.bibliography > li {
-  position: relative;
-  padding-right: 4rem;
+html .publications ol.bibliography {
+  border-top: 1px solid var(--global-divider-color);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
+/* Per-entry year marker: floated on the title line so long titles wrap
+   around it instead of overlapping */
 html .publications .pub-year {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
+  margin-left: 1.25rem;
   font-weight: 600;
   color: var(--global-theme-color);
 }
@@ -485,11 +484,20 @@ html .publications .row > .abbr {
 
 /* One-sentence summary under each publication (bib `note` field) —
    italic, only slightly softer than body text */
-html .publications .periodical + .periodical {
+html .publications .periodical.note {
   font-style: italic;
   color: var(--global-text-color);
   opacity: 0.85;
   margin-top: 0.15rem;
+}
+
+/* Blog list dividers match the site-wide divider color */
+html .post-list > li {
+  border-bottom-color: var(--global-divider-color);
+}
+
+html .post-list > li:last-child {
+  border-bottom: none;
 }
 
 html .publications .row > .col-sm-8,
