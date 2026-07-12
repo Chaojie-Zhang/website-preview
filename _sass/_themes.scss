@@ -321,9 +321,21 @@ html .card .card-text {
   font-size: 0.95rem;
 }
 
-/* Publication entries: let the text column fill the row so its width
-   matches the surrounding content */
+/* Publication entries: narrow fixed badge column, text fills the rest of
+   the row so its width matches the surrounding content */
+html .publications .row > .abbr {
+  flex: 0 0 120px;
+  max-width: 120px;
+}
+
+html .publications .row > .col-sm-8,
 html .publications ol.bibliography > li .row > div:not(.abbr) {
   flex: 1 1 auto;
   max-width: 100%;
+}
+
+/* Always reserve the scrollbar gutter so page transitions don't jitter
+   when the scrollbar appears/disappears */
+html {
+  overflow-y: scroll;
 }

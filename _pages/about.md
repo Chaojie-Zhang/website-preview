@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: about me
 permalink: /
 subtitle: Plasma/Accelerator Physicist at <a href='https://www.ucla.edu/'>UCLA</a> • Plasma Wakefield Acceleration • Ultrafast Laser-Matter Interaction
 
