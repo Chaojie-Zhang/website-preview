@@ -38,3 +38,14 @@ pub_numbering: true
 {% bibliography %}
 
 </div>
+
+<script>
+  /* Number entries [N]..[1] from document order, once. bibsearch only
+     hides entries, so numbers stay correct under any filter. */
+  (function () {
+    var items = document.querySelectorAll(".publications ol.bibliography > li .pub-num");
+    items.forEach(function (el, i) {
+      el.textContent = "[" + (items.length - i) + "]";
+    });
+  })();
+</script>
