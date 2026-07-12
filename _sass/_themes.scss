@@ -216,6 +216,32 @@ html {
   font-size: 18px;
 }
 
+/* Native system font stack: modern, professional, and — critically — no
+   web-font swap, which caused a small vertical jump on every page load */
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Headings: same family, tighter line-height (Tailwind's 1.5 made large
+   headings look vertically stretched) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  line-height: 1.25;
+}
+
 /* Publication year separators: accent color instead of the near-invisible
    divider color */
 html .publications h2.bibliography {
