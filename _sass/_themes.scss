@@ -255,15 +255,19 @@ h6 {
   line-height: 1.25;
 }
 
+/* Type scale, anchored to the 1.25rem navbar brand:
+   page titles 1.6 > sections 1.35 > list entries 1.25 > subsections 1.2/1.05.
+   Note: the theme reuses .post-title on blog-list anchors, so list entries
+   need their own (smaller) size. */
 html h1,
-html .post-title {
-  font-size: 1.9rem;
-  letter-spacing: -0.017em;
+html h1.post-title {
+  font-size: 1.6rem;
+  letter-spacing: -0.015em;
 }
 
 html h2 {
-  font-size: 1.4rem;
-  letter-spacing: -0.012em;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
 }
 
 html h3 {
@@ -273,6 +277,11 @@ html h3 {
 
 html h4 {
   font-size: 1.05rem;
+}
+
+html .post-list h3,
+html .post-list .post-title {
+  font-size: 1.25rem;
 }
 
 html .post-header .post-description,
@@ -392,6 +401,7 @@ html body.fixed-top-nav {
 /* Name: uniformly bold in the navbar, uniform weight in the about title */
 html .navbar-brand {
   font-weight: 700;
+  font-size: 1.25rem;
 }
 
 h1.post-title .font-weight-bold {
