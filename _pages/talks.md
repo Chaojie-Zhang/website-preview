@@ -5,6 +5,13 @@ title: talks
 description: selected plenary and invited talks
 nav: true
 nav_order: 4
+redirect_from:
+  - /talks/2016-aac-harbor-plenary/
+  - /talks/2021-aps-dpp-pittsburgh/
+  - /talks/2024-aac-naperville-plenary/
+  - /talks/2024-ieee-icops-beijing/
+  - /talks/2024-ieee-icops-beijing
+  - /talkmap/
 ---
 
 #### Plenary Talk — Advanced Accelerator Concepts Workshop (AAC24)

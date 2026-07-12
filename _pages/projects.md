@@ -6,6 +6,8 @@ description: a growing collection of my research projects
 nav: true
 nav_order: 2
 horizontal: false
+redirect_from:
+  - /portfolio/
 ---
 
 <!-- pages/projects.md -->

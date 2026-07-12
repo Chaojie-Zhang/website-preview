@@ -6,6 +6,9 @@ nav: true
 nav_order: 5
 description: curriculum vitae
 redirect_from:
+  - /teaching/
+  - /teaching/2010-graduate-mentoring/
+  - /cv-json/
   - /resume
 toc:
   sidebar: right

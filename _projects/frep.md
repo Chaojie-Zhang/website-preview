@@ -6,6 +6,8 @@ img: assets/img/FREP_concept_visualization.png
 importance: 1
 category: work
 related_publications: false
+redirect_from:
+  - /portfolio/FREP/
 ---
 
 ### The Challenge: Seeing a Wave That Moves at Light Speed

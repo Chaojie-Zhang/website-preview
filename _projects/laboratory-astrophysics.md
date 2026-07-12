@@ -6,6 +6,8 @@ img: assets/img/AAPS-CO2-weibel-cover.png
 importance: 2
 category: work
 related_publications: false
+redirect_from:
+  - /portfolio/PELLA/
 ---
 
 ### The Frontier: Laboratory Astrophyics
